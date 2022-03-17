@@ -38,9 +38,6 @@ h2 {
   max-width: 20ch;
 }
 
-h3 {
-}
-
 p {
   color: var(--color-dark);
   font-family: var(--font-copy);
@@ -233,13 +230,20 @@ footer section div {
   background-color: var(--color-lighter);
   max-width: 300px;
   padding-top: 0;
+  box-shadow: -4px 5px 14px -6px rgba(200, 200, 200, 0.7);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: -10px 10px 14px -6px rgba(200, 200, 200, 0.8);
 }
 
 .card_name {
-  font-size: 1.56rem;
+  font-size: 1.77rem;
   padding: 0 1rem;
   font-weight: 600;
   margin-top: 1rem;
+  color: #011638;
 }
 .card img {
   min-width: 300px;
@@ -249,11 +253,14 @@ footer section div {
 .card p {
   margin-bottom: 0;
   padding: 0 1rem;
-  font-size: 1rem;
 }
 
 .card_slogan {
-  margin-top: 0.75rem;
+  margin-top: 0.75rem !important;
+  color: #4f5c74;
+  font-family: "Raleway", "sans-serif";
+  font-size: 0.75rem;
+  font-weight: 100 !important;
 }
 .card_title {
   color: #4f5c74 !important;
@@ -279,13 +286,13 @@ input[type="button"] {
 }
 
 .card_mail a {
-  color: #a80665;
+  color: #4f5c74;
   font-size: 0.8rem;
+  font-family: var(--font-header);
 }
 
 .card_buttons {
   margin-top: 1rem;
-  border-top: solid 1px var(--color-light);
   padding: 1rem 1rem;
   display: flex;
   justify-content: space-evenly;
